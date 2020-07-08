@@ -42,7 +42,7 @@ class RefineAndExport:
         self._refined_region.writeFile(output_zinc_file)
 
         """ Export to VTK """
-        description = "Stomach Scaffold"
+        description = "A Zinc model scaffold"
         exportvtk = ExportVtk(self._refined_region, description, self._refined_annotation_groups)
         exportvtk.writeFile(output_vtk_file)
 
